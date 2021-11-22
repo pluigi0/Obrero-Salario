@@ -15,7 +15,6 @@ public class Obrero {
     public static void main(String[] args) {
         float horasTrabajadas, salarioH, extras;
 
-        
         horasTrabajadas = Float.parseFloat(JOptionPane.showInputDialog("Ingrese horas trabajadas de esta semana: "));
         
         if (horasTrabajadas <= 40){
@@ -28,11 +27,8 @@ public class Obrero {
             extras = horasTrabajadas-40;
             salarioH += extras *20;
             JOptionPane.showMessageDialog(null, "Se le paga $16 la hora");
-            JOptionPane.showMessageDialog(null, " Adicional, sus horas extras ("+ extras+") las     cuales se pagan a $20 cada una"+
+            JOptionPane.showMessageDialog(null, " Adicional, sus horas extras ("+ extras+") las cuales se pagan a $20 cada una"+
                     "\nPor lo que el salario de esta semana es: "+salarioH);
-        }
-        
-        
-        
+        }        
     } 
 }
